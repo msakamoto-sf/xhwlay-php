@@ -1,0 +1,26 @@
+<html>
+<body>
+<h1>Wizard Example</h1>
+<h2>Page 1 (Input Addresses)</h2>
+<form action="" method="POST">
+<table>
+<tr><th>Zip Code</th><td><input type="text" name="zip" value="<?php echo @$GLOBALS['template']['f_zip']; ?>"></td></tr>
+<tr><th>Address</th><td><input type="text" name="address" value="<?php echo @$GLOBALS['template']['f_address']; ?>"></td></tr>
+<tr><th>Telephone</th><td><input type="text" name="telephone" value="<?php echo @$GLOBALS['template']['f_telephone']; ?>"></td></tr>
+<tr><td colspan="2">
+<input type="submit" name="_event_onBacktoPage0" value="&lt;&lt; Page 0" />
+<input type="submit" name="_event_onSubmitPage2" value="&gt;&gt; Page 2" />
+</td></tr>
+</table>
+</table>
+
+</form>
+<hr />
+<ul>
+<li>Page Position : <?php echo $GLOBALS['template']['page']; ?></li>
+<li>Bookmark Container ID : <?php echo $GLOBALS['template']['bcid']; ?></li>
+<li><a href="login.php">Show Login Information</a></li>
+<li><a href="login.php?_event_=onLogout">Logout</a></li>
+</ul>
+</body>
+</html>

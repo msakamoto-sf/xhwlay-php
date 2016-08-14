@@ -1,0 +1,18 @@
+<html>
+<body>
+<h1>Page oriented flow example</h1>
+<ul>
+<li>Current Page : <?php echo $GLOBALS['template']['page']; ?></li>
+<li>Bookmark Container ID : <?php echo $GLOBALS['template']['bcid']; ?></li>
+<li>Bookmark Mode : <?php echo $GLOBALS['template']['bookmark']; ?></li>
+</ul>
+<ul>
+<li><a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>">current</a></li>
+<li><a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>?_page_=page0">default</a></li>
+<li><a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>?_page_=page1">page 1</a></li>
+<li><a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>?_page_=page2&barrier=block">page 2 (Barrier Blocked ... finally, page 1)</a></li>
+<li><a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>?_page_=page2&barrier=pass">page 2 (Barrier Pass.)</a></li>
+<li><a href="<?php echo $_SERVER['SCRIPT_NAME']; ?>?_page_=page3">page 3</a></li>
+</ul>
+</body>
+</html>

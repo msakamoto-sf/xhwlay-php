@@ -1,0 +1,30 @@
+<html>
+<body>
+<h1>Wizard Example</h1>
+<h2>Page 3 (Confirmation)</h2>
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>?_bcid_=<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>" method="POST">
+<table>
+<tr><th>Name</th><td><?php echo @$GLOBALS['template']['f_name']; ?></td></tr>
+<tr><th>E-mail</th><td><?php echo @$GLOBALS['template']['f_email']; ?></td></tr>
+<tr><th>Zip Code</th><td><?php echo @$GLOBALS['template']['f_zip']; ?></td></tr>
+<tr><th>Address</th><td><?php echo @$GLOBALS['template']['f_address']; ?></td></tr>
+<tr><th>Telephone</th><td><?php echo @$GLOBALS['template']['f_telephone']; ?></td></tr>
+<tr><th>Age</th><td><?php echo @$GLOBALS['template']['f_age']; ?></td></tr>
+<tr><th>Hobby</th><td><?php echo @$GLOBALS['template']['f_hobby']; ?></td></tr>
+<tr><td colspan="2">
+<input type="submit" name="_event_onBacktoPage2" value="&lt;&lt; Page 2" />
+<input type="submit" name="_event_onSubmitPage4" value="&gt;&gt; Page 4" />
+</td></tr>
+</table>
+</table>
+
+</form>
+<hr />
+<ul>
+<li>Page Position : <?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_PAGE, XHWLAY_VAR_NAMESPACE_VIEW) ?></li>
+<li>Bookmark Container ID : <?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?></li>
+<li><a href="login.php?_bcid_=<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>">Show Login Information</a></li>
+<li><a href="login.php?_event_=onLogout&_bcid_=<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>">Logout</a></li>
+</ul>
+</body>
+</html>

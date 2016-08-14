@@ -1,0 +1,19 @@
+<html>
+<body>
+<ul>
+<li>Page Position : <?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_PAGE, XHWLAY_VAR_NAMESPACE_VIEW) ?></li>
+<li>Bookmark Container ID : <?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?></li>
+<li>Session Count : <?php echo $GLOBALS['template']['count']; ?></li>
+<li>User ID : <?php echo $GLOBALS['template']['user_id']; ?></li>
+</ul>
+
+<hr>
+<h3><a href="main.php?_bcid_=<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>">Go to Wizard Example.</a></h3>
+<hr>
+<form action="" method="POST">
+<input type="hidden" name="_event_" value="onLogout" />
+<input type="hidden" name="_bcid_" value="<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>" />
+<input type="submit" value="Logout" />
+</form>
+</body>
+</html>

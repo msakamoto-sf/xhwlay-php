@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0" packagerversion="1.6.2">
+ <name>Xhwlay</name>
+ <summary>Event Driven Oriented Stateful Page Flow Execution Engine Library</summary>
+ <description>Xhwlay provides event-driven oriented statefull page flow 
+control library. Xhwlay has 3 main concepts :
+1. Simple
+2. Primitive
+3. Small
+These concept will lead ease to learn, ease to hack, ease to use, and 
+more and more flexibility for developers.
+ </description>
+ <maintainers>
+  <maintainer>
+   <user>msakamoto-sf</user>
+   <name>Masahiko Sakamoto</name>
+   <email>msakamoto-sf@users.sourceforge.net</email>
+   <role>lead</role>
+  </maintainer>
+  </maintainers>
+ <release>
+  <version>0.9.3</version>
+  <date>2008-03-06</date>
+  <license>Apache License, Version 2.0</license>
+  <state>beta</state>
+  <notes>- Fix Xhwlay_Bookmark_FileStoreContainer&apos;s gc() bug and test case bugs.
+  </notes>
+  <deps>
+   <dep type="php" rel="ge" version="4.3.0" optional="no"/>
+   <dep type="pkg" rel="has" optional="no">File</dep>
+   <dep type="pkg" rel="has" optional="no">PHP_Compat</dep>
+   <dep type="pkg" rel="has" optional="yes">Jsphon</dep>
+  </deps>
+  <provides type="class" name="Xhwlay_Renderer_VarDump" extends="Xhwlay_Renderer_AbstractRenderer" />
+  <provides type="function" name="Xhwlay_Renderer_VarDump::render" />
+  <filelist>
+   <dir name="docs">
+    <file role="doc" baseinstalldir="/" name="xhwlay_tutorials_en.odt"/>
+    <file role="doc" baseinstalldir="/" name="xhwlay_tutorials_ja.odt"/>
+   </dir> <!-- /docs -->
+   <dir name="sample">
+    <dir name="classes">
+     <dir name="Tutorial">
+      <dir name="PageActions">
+       <file role="doc" baseinstalldir="/" name="Page1.php"/>
+       <file role="doc" baseinstalldir="/" name="Page2.php"/>
+      </dir> <!-- /sample/classes/Tutorial/PageActions -->
+     </dir> <!-- /sample/classes/Tutorial -->
+    </dir> <!-- /sample/classes -->
+    <dir name="templates">
+     <file role="doc" baseinstalldir="/" name="login_login.html"/>
+     <file role="doc" baseinstalldir="/" name="login_logout.html"/>
+     <file role="doc" baseinstalldir="/" name="login_main.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page0.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page1.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page2.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page3.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page4.html"/>
+     <file role="doc" baseinstalldir="/" name="pages_default.html"/>
+    </dir> <!-- /sample/templates -->
+    <file role="doc" baseinstalldir="/" name="login.php"/>
+    <file role="doc" baseinstalldir="/" name="main.php"/>
+    <file role="doc" baseinstalldir="/" name="pages.php"/>
+    <file role="doc" baseinstalldir="/" name="README.txt"/>
+   </dir> <!-- /sample -->
+   <dir name="sample2">
+    <dir name="templates">
+     <file role="doc" baseinstalldir="/" name="login_login.html"/>
+     <file role="doc" baseinstalldir="/" name="login_logout.html"/>
+     <file role="doc" baseinstalldir="/" name="login_main.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page0.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page1.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page2.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page3.html"/>
+     <file role="doc" baseinstalldir="/" name="main_page4.html"/>
+    </dir> <!-- /sample2/templates -->
+    <file role="doc" baseinstalldir="/" name="controller.php"/>
+    <file role="doc" baseinstalldir="/" name="login.php"/>
+    <file role="doc" baseinstalldir="/" name="main.php"/>
+    <file role="doc" baseinstalldir="/" name="README.txt"/>
+   </dir> <!-- /sample2 -->
+   <dir name="test">
+    <dir name="Bookmark">
+     <file role="test" baseinstalldir="/" name="Xhwlay_Bookmark_AbstractContainer_TestCase.php"/>
+     <file role="test" baseinstalldir="/" name="Xhwlay_Bookmark_FileStoreContainer_TestCase.php"/>
+    </dir> <!-- /test/Bookmark -->
+    <dir name="Config">
+     <file role="test" baseinstalldir="/" name="Xhwlay_Config_PHPArray_TestCase.php"/>
+    </dir> <!-- /test/Config -->
+    <dir name="Renderer">
+     <file role="test" baseinstalldir="/" name="Xhwlay_Renderer_AbstractRenderer_TestCase.php"/>
+     <file role="test" baseinstalldir="/" name="Xhwlay_Renderer_Include_TestCase.php"/>
+     <file role="test" baseinstalldir="/" name="Xhwlay_Renderer_Include_TestCase.txt"/>
+     <file role="test" baseinstalldir="/" name="Xhwlay_Renderer_Json_TestCase.php"/>
+     <file role="test" baseinstalldir="/" name="Xhwlay_Renderer_Serialize_TestCase.php"/>
+     <file role="test" baseinstalldir="/" name="Xhwlay_Renderer_VarDump_TestCase.php"/>
+    </dir> <!-- /test/Renderer -->
+    <file role="test" baseinstalldir="/" name="prepare.php"/>
+    <file role="test" baseinstalldir="/" name="README.txt"/>
+    <file role="test" baseinstalldir="/" name="Xhwlay_Bookmark_TestCase.php"/>
+    <file role="test" baseinstalldir="/" name="Xhwlay_ErrorStack_TestCase.php"/>
+    <file role="test" baseinstalldir="/" name="Xhwlay_Hook_TestCase.php"/>
+    <file role="test" baseinstalldir="/" name="Xhwlay_Runner_TestCase.php"/>
+    <file role="test" baseinstalldir="/" name="Xhwlay_Util_TestCase.php"/>
+    <file role="test" baseinstalldir="/" name="Xhwlay_Var_TestCase.php"/>
+   </dir> <!-- /test -->
+   <dir name="Xhwlay">
+    <dir name="Bookmark">
+     <file role="php" baseinstalldir="/" name="AbstractContainer.php"/>
+     <file role="php" baseinstalldir="/" name="FileStoreContainer.php"/>
+    </dir> <!-- /Xhwlay/Bookmark -->
+    <dir name="Config">
+     <file role="php" baseinstalldir="/" name="Interface.php"/>
+     <file role="php" baseinstalldir="/" name="PHPArray.php"/>
+    </dir> <!-- /Xhwlay/Config -->
+    <dir name="Renderer">
+     <file role="php" baseinstalldir="/" name="AbstractRenderer.php"/>
+     <file role="php" baseinstalldir="/" name="Include.php"/>
+     <file role="php" baseinstalldir="/" name="Json.php"/>
+     <file role="php" baseinstalldir="/" name="Serialize.php"/>
+     <file role="php" baseinstalldir="/" name="VarDump.php"/>
+    </dir> <!-- /Xhwlay/Renderer -->
+    <file role="php" baseinstalldir="/" name="Bookmark.php"/>
+    <file role="php" baseinstalldir="/" name="ErrorStack.php"/>
+    <file role="php" baseinstalldir="/" name="Hook.php"/>
+    <file role="php" baseinstalldir="/" name="Runner.php"/>
+    <file role="php" baseinstalldir="/" name="Util.php"/>
+    <file role="php" baseinstalldir="/" name="Var.php"/>
+   </dir> <!-- /Xhwlay -->
+   <file role="doc" baseinstalldir="/" name="LICENSE"/>
+  </filelist>
+ </release>
+ <changelog>
+   <release>
+    <version>0.9.0</version>
+    <date>2008-02-14</date>
+    <license>Apache License, Version 2.0</license>
+    <state>beta</state>
+    <notes>- This is first beta release of Xhwlay.
+    </notes>
+   </release>
+   <release>
+    <version>0.9.1</version>
+    <date>2008-02-14</date>
+    <license>Apache License, Version 2.0</license>
+    <state>beta</state>
+    <notes>- Fix security problems.
+- Add new &quot;sample2&quot; sample codes.
+    </notes>
+   </release>
+   <release>
+    <version>0.9.2</version>
+    <date>2008-02-20</date>
+    <license>Apache License, Version 2.0</license>
+    <state>beta</state>
+    <notes>- Change XHWLAY_ERRORSTACK_EL_INFO to XHWLAY_ERRORSTACK_EL_DEBUG.
+    </notes>
+   </release>
+   <release>
+    <version>0.9.3</version>
+    <date>2008-03-06</date>
+    <license>Apache License, Version 2.0</license>
+    <state>beta</state>
+    <notes>- Fix Xhwlay_Bookmark_FileStoreContainer&apos;s gc() bug and test case bugs.
+    </notes>
+   </release>
+ </changelog>
+</package>

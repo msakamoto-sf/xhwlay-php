@@ -1,0 +1,15 @@
+<html>
+<body>
+<h1>Wizard Example</h1>
+<h2>Page 4 (Done)</h2>
+<p>Wizard End Page. Somethings were done.</p>
+
+<hr />
+<ul>
+<li>Page Position : <?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_PAGE, XHWLAY_VAR_NAMESPACE_VIEW) ?></li>
+<li>Bookmark Container ID : <?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?></li>
+</ul>
+<a href="main.php">Back to Page 0</a><br />
+<a href="login.php?_event_=onLogout&_bcid_=<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>">Logout</a>
+</body>
+</html>

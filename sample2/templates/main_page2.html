@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1>Wizard Example</h1>
+<h2>Page 2 (Input Age and Hobby)</h2>
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>?_bcid_=<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>" method="POST">
+<table>
+<tr><th>Age</th><td><input type="text" name="age" value="<?php echo @$GLOBALS['template']['f_age']; ?>"></td></tr>
+<tr><th>Hobby</th><td><input type="text" name="hobby" value="<?php echo @$GLOBALS['template']['f_hobby']; ?>"></td></tr>
+<tr><td colspan="2">
+<input type="submit" name="_event_onBacktoPage1" value="&lt;&lt; Page 1" />
+<input type="submit" name="_event_onSubmitPage3" value="&gt;&gt; Page 3" />
+</td></tr>
+</table>
+</table>
+
+</form>
+<hr />
+<ul>
+<li>Page Position : <?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_PAGE, XHWLAY_VAR_NAMESPACE_VIEW) ?></li>
+<li>Bookmark Container ID : <?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?></li>
+<li><a href="login.php?_bcid_=<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>">Show Login Information</a></li>
+<li><a href="login.php?_event_=onLogout&_bcid_=<?php echo Xhwlay_Var::get(XHWLAY_VAR_KEY_BCID, XHWLAY_VAR_NAMESPACE_VIEW) ?>">Logout</a></li>
+</ul>
+</body>
+</html>

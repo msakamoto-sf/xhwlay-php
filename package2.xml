@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.6.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Xhwlay</name>
+ <uri>http://xhwlay.sourceforge.net/</uri>
+ <summary>Event Driven Oriented Stateful Page Flow Execution Engine Library</summary>
+ <description>Xhwlay provides event-driven oriented statefull page flow 
+control library. Xhwlay has 3 main concepts :
+1. Simple
+2. Primitive
+3. Small
+These concept will lead ease to learn, ease to hack, ease to use, and 
+more and more flexibility for developers.</description>
+ <lead>
+  <name>Masahiko Sakamoto</name>
+  <user>msakamoto-sf</user>
+  <email>msakamoto-sf@users.sourceforge.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-03-06</date>
+ <time>04:44:09</time>
+ <version>
+  <release>0.9.3</release>
+  <api>0.9.3</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</license>
+ <notes>
+- Fix Xhwlay_Bookmark_FileStoreContainer&apos;s gc() bug and test case bugs.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="83a36c8154d0bfb92ca8784b2ae8a315" name="docs/xhwlay_tutorials_en.odt" role="doc" />
+   <file baseinstalldir="/" md5sum="f1fc6c1f434b1bd6a91a3673c35379f1" name="docs/xhwlay_tutorials_ja.odt" role="doc" />
+   <file baseinstalldir="/" md5sum="3833dd2a61ddbff624d4c42e3b382d53" name="sample/login.php" role="doc" />
+   <file baseinstalldir="/" md5sum="fe2837f5edbcb7f3011440e5fbd0d0bc" name="sample/main.php" role="doc" />
+   <file baseinstalldir="/" md5sum="7052ef4de36bc6a3e71af5852e63d408" name="sample/pages.php" role="doc" />
+   <file baseinstalldir="/" md5sum="92ad0af715b77663667f13cb5770927b" name="sample/README.txt" role="doc" />
+   <file baseinstalldir="/" md5sum="38bfe3e9bc10f02d23a463c8eaf277c5" name="sample/classes/Tutorial/PageActions/Page1.php" role="doc" />
+   <file baseinstalldir="/" md5sum="11898ae38ac461e20a85158d80b1c44f" name="sample/classes/Tutorial/PageActions/Page2.php" role="doc" />
+   <file baseinstalldir="/" md5sum="11aee91ca1d2d097661c9d676270aac6" name="sample/templates/login_login.html" role="doc" />
+   <file baseinstalldir="/" md5sum="88ffa0f8d37cc381b3dde61461649285" name="sample/templates/login_logout.html" role="doc" />
+   <file baseinstalldir="/" md5sum="7b516c928b7862cc4cfddf1645e6dd32" name="sample/templates/login_main.html" role="doc" />
+   <file baseinstalldir="/" md5sum="5eac6a649b67c7481f2a9991632c5675" name="sample/templates/main_page0.html" role="doc" />
+   <file baseinstalldir="/" md5sum="a7131debc1bd953278b816e4ca800200" name="sample/templates/main_page1.html" role="doc" />
+   <file baseinstalldir="/" md5sum="b13a0b756049e0d3012dd9893ae7db70" name="sample/templates/main_page2.html" role="doc" />
+   <file baseinstalldir="/" md5sum="ea55237999afa95cc970e35f48220b18" name="sample/templates/main_page3.html" role="doc" />
+   <file baseinstalldir="/" md5sum="c6132b6cbe3b808f852952339abe712a" name="sample/templates/main_page4.html" role="doc" />
+   <file baseinstalldir="/" md5sum="43bfca169b6398a831919e7727aba06d" name="sample/templates/pages_default.html" role="doc" />
+   <file baseinstalldir="/" md5sum="0b0554ceae17c08158c56999ef592b6a" name="sample2/controller.php" role="doc" />
+   <file baseinstalldir="/" md5sum="c84845904f4d20462470233196a4340e" name="sample2/login.php" role="doc" />
+   <file baseinstalldir="/" md5sum="0cefec0f6a1a4500b684cf5436c09fda" name="sample2/main.php" role="doc" />
+   <file baseinstalldir="/" md5sum="d06f5256632d42d7f8a2d76bee137e2b" name="sample2/README.txt" role="doc" />
+   <file baseinstalldir="/" md5sum="e92c4911f9a68dcc5d46b0739cbb2667" name="sample2/templates/login_login.html" role="doc" />
+   <file baseinstalldir="/" md5sum="8b72d85f2db564d854bafcc18d9bb28a" name="sample2/templates/login_logout.html" role="doc" />
+   <file baseinstalldir="/" md5sum="09e61d444ba863cc3287dcfdaeabde82" name="sample2/templates/login_main.html" role="doc" />
+   <file baseinstalldir="/" md5sum="015ff2019d7dc0f7fe6fd2dca6dad814" name="sample2/templates/main_page0.html" role="doc" />
+   <file baseinstalldir="/" md5sum="4a110f090c4682bf8ef8d691b9ae89e6" name="sample2/templates/main_page1.html" role="doc" />
+   <file baseinstalldir="/" md5sum="7d6ee5feb3c54ccd010933863c608d1c" name="sample2/templates/main_page2.html" role="doc" />
+   <file baseinstalldir="/" md5sum="e42a3e8f481b54b298103760ba66796e" name="sample2/templates/main_page3.html" role="doc" />
+   <file baseinstalldir="/" md5sum="ade6faab32e5355b300176f622dc34f1" name="sample2/templates/main_page4.html" role="doc" />
+   <file baseinstalldir="/" md5sum="e02e37bc80a20336488a69cf3a21914c" name="test/prepare.php" role="test" />
+   <file baseinstalldir="/" md5sum="c9d05dee08a31b7961a5c48d92c61609" name="test/README.txt" role="test" />
+   <file baseinstalldir="/" md5sum="60ba883831605fdeeaa2bece2fdb4c24" name="test/Xhwlay_Bookmark_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="3f2012255b659d48f01e7c637103c29d" name="test/Xhwlay_ErrorStack_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="b1cd62697a12787aadeb762636269a74" name="test/Xhwlay_Hook_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="6718559a5c4bc8468e81c54bac5852bc" name="test/Xhwlay_Runner_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="c542154da07f85e0e06848a36c9cfc3d" name="test/Xhwlay_Util_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="e1a5616a75c9ff09c0ec97e914c3aa43" name="test/Xhwlay_Var_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="83f96707617d6199cd542bfc5b241d71" name="test/Bookmark/Xhwlay_Bookmark_AbstractContainer_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="de670dad7122d290db954b99a931bb25" name="test/Bookmark/Xhwlay_Bookmark_FileStoreContainer_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="46d93c7b9da2a4a8a460c88a5eb2ca0d" name="test/Config/Xhwlay_Config_PHPArray_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="d492c3dcf9d486f0c95ab907176f371e" name="test/Renderer/Xhwlay_Renderer_AbstractRenderer_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="0f06707c25dd60c2ec7a73e53ed66505" name="test/Renderer/Xhwlay_Renderer_Include_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="7a7cbb96a24718e2dcb34386acdb1bbc" name="test/Renderer/Xhwlay_Renderer_Include_TestCase.txt" role="test" />
+   <file baseinstalldir="/" md5sum="f03cf0f3811ee2b3eaa4cb5cf2d5862b" name="test/Renderer/Xhwlay_Renderer_Json_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="d024181b05aff4b9403f29430bea756c" name="test/Renderer/Xhwlay_Renderer_Serialize_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="74b95f517ee82035da8d2aa486669ce8" name="test/Renderer/Xhwlay_Renderer_VarDump_TestCase.php" role="test" />
+   <file baseinstalldir="/" md5sum="b5b0d3992875068c71037ac47b65c38f" name="Xhwlay/Bookmark.php" role="php" />
+   <file baseinstalldir="/" md5sum="0726a83a40f4267cd3dd578b53389002" name="Xhwlay/ErrorStack.php" role="php" />
+   <file baseinstalldir="/" md5sum="2fff3e47cef7d1b46f6d06fb7538366f" name="Xhwlay/Hook.php" role="php" />
+   <file baseinstalldir="/" md5sum="cc68af7fe478e30f93ae66d3975491a8" name="Xhwlay/Runner.php" role="php" />
+   <file baseinstalldir="/" md5sum="d86841f9966faf35ae9ac14e07b1269e" name="Xhwlay/Util.php" role="php" />
+   <file baseinstalldir="/" md5sum="f99186959fbd1ee2e774a4932232d176" name="Xhwlay/Var.php" role="php" />
+   <file baseinstalldir="/" md5sum="db9281000efcaf888a666e83191965ec" name="Xhwlay/Bookmark/AbstractContainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="e6b620e1ed88acad46e2dd1a9bc06f41" name="Xhwlay/Bookmark/FileStoreContainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="368df332af9307de176e8bbb625004eb" name="Xhwlay/Config/Interface.php" role="php" />
+   <file baseinstalldir="/" md5sum="77923f49d8dfd1e8a0cabc2c46e234fc" name="Xhwlay/Config/PHPArray.php" role="php" />
+   <file baseinstalldir="/" md5sum="6b642eddd10c0a4d99d8fb9379dfa61b" name="Xhwlay/Renderer/AbstractRenderer.php" role="php" />
+   <file baseinstalldir="/" md5sum="2947030b483731e38ad08f0053afa2f7" name="Xhwlay/Renderer/Include.php" role="php" />
+   <file baseinstalldir="/" md5sum="867513bf536a47147c2086d760cdb071" name="Xhwlay/Renderer/Json.php" role="php" />
+   <file baseinstalldir="/" md5sum="a7149e7cff60bc73878d172c39fda8a8" name="Xhwlay/Renderer/Serialize.php" role="php" />
+   <file baseinstalldir="/" md5sum="87abfc8938976d979a24ff03a3509d86" name="Xhwlay/Renderer/VarDump.php" role="php" />
+   <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="doc" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>File</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>PHP_Compat</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+  <optional>
+   <package>
+    <name>Jsphon</name>
+    <channel>pear.hawklab.jp</channel>
+   </package>
+  </optional>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-02-14</date>
+   <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</license>
+   <notes>- This is first beta release of Xhwlay.</notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.1</release>
+    <api>0.9.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-02-14</date>
+   <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</license>
+   <notes>- Fix security problems.
+- Add new &quot;sample2&quot; sample codes.</notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.2</release>
+    <api>0.9.2</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-02-20</date>
+   <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</license>
+   <notes>- Change XHWLAY_ERRORSTACK_EL_INFO to XHWLAY_ERRORSTACK_EL_DEBUG.</notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.3</release>
+    <api>0.9.3</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-03-06</date>
+   <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</license>
+   <notes>
+- Fix Xhwlay_Bookmark_FileStoreContainer&apos;s gc() bug and test case bugs.
+   </notes>
+  </release>
+ </changelog>
+</package>

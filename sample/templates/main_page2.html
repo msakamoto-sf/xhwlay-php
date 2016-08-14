@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1>Wizard Example</h1>
+<h2>Page 2 (Input Age and Hobby)</h2>
+<form action="" method="POST">
+<table>
+<tr><th>Age</th><td><input type="text" name="age" value="<?php echo @$GLOBALS['template']['f_age']; ?>"></td></tr>
+<tr><th>Hobby</th><td><input type="text" name="hobby" value="<?php echo @$GLOBALS['template']['f_hobby']; ?>"></td></tr>
+<tr><td colspan="2">
+<input type="submit" name="_event_onBacktoPage1" value="&lt;&lt; Page 1" />
+<input type="submit" name="_event_onSubmitPage3" value="&gt;&gt; Page 3" />
+</td></tr>
+</table>
+</table>
+
+</form>
+<hr />
+<ul>
+<li>Page Position : <?php echo $GLOBALS['template']['page']; ?></li>
+<li>Bookmark Container ID : <?php echo $GLOBALS['template']['bcid']; ?></li>
+<li><a href="login.php">Show Login Information</a></li>
+<li><a href="login.php?_event_=onLogout">Logout</a></li>
+</ul>
+</body>
+</html>

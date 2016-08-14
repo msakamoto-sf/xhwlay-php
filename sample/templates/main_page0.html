@@ -1,0 +1,24 @@
+<html>
+<body>
+<h1>Wizard Example</h1>
+<h2>Page 0 (Start Page : Input Name and E-mail)</h2>
+<form action="" method="POST">
+<table>
+<tr><th>Handle Name</th><td><input type="text" name="name" value="<?php echo @$GLOBALS['template']['f_name']; ?>"></td></tr>
+<tr><th>E-mail</th><td><input type="text" name="email" value="<?php echo @$GLOBALS['template']['f_email']; ?>"></td></tr>
+<tr><td colspan="2">
+<input type="submit" name="_event_onSubmitPage1" value="&gt;&gt; Page 1" />
+</td></tr>
+</table>
+</table>
+
+</form>
+<hr />
+<ul>
+<li>Page Position : <?php echo $GLOBALS['template']['page']; ?></li>
+<li>Bookmark Container ID : <?php echo $GLOBALS['template']['bcid']; ?></li>
+<li><a href="login.php">Show Login Information</a></li>
+<li><a href="login.php?_event_=onLogout">Logout</a></li>
+</ul>
+</body>
+</html>

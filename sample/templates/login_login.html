@@ -1,0 +1,20 @@
+<html>
+<body>
+<ul>
+<li>Page Position : <?php echo $GLOBALS['template']['page']; ?></li>
+<li>Bookmark Container ID : <?php echo $GLOBALS['template']['bcid']; ?></li>
+</ul>
+
+<form action="login.php" method="POST">
+<input type="hidden" name="_event_" value="onLogin" />
+<table>
+<tr><th>user name</th><td><input type="text" name="user_name" value="">(not null, or, anything is okay.)</td></tr>
+<tr><th>password</th><td><input type="password" name="password" value="">(not null, or, anything is okay.)</td></tr>
+<tr><td colspan="2">
+<input type="submit" value="Login" />
+</td></tr>
+</table>
+</form>
+
+</body>
+</html>
