@@ -1,2 +1,4 @@
 # xhwlay-php
-Event driven stateful page flow engine
+Event Driven Oriented Stateful Page Flow Execution Engine Library
+
+see : https://msakamoto-sf.github.io/xhwlay-php/
