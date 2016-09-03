@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Xhwlay - Event Driven Oriented Stateful Page Flow Execution Engine Library</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="../css/filter_ie4.css">
+</head>
+<body>
+<div id="wrapper">
+
+<div id="header">
+<img id="xhwlay-logo" src="../xhwlay-logo.png" alt="Xhwlay logo"><br><br>
+<div id="xhwlay-headernote">
+<span style="font-style: italic;">" Xhwlay (zur&eacute;i) "</span><br>
+- Event Driven Oriented Stateful Page Flow Execution Engine Library -
+<ul>
+<li><a href="../" title="Back to Top Page">Top</a></li>
+<li><a href="../ja/" title="Xhwlay - PHP (Japanese)">Japanese</a></li>
+<li><a href="#INTRO" title="Intro">Intro</a></li>
+<li><a href="#ABOUT" title="About">About</a></li>
+<li><a href="#DOWNLOAD" title="Download and Install">Download/Install</a></li>
+<li><a href="#DOCUMENTS" title="Documents">Documents</a></li>
+</ul>
+</div>
+</div><!-- #header -->
+
+<div id="content-wrapper">
+
+<div id="main">
+
+<div class="text-wrapper">
+<h1><a name="INTRO">Intro: What Xhwlay IS, and IS NOT ?</a></h1>
+<div class="text">
+<span style="font-size: large; font-style: italic; font-weight: bold;">
+Xhwlay is a library, not a framework.
+</span>
+<p>
+Xhwlay provides event-driven oriented statefull page flow control library.
+Xhwlay does <em>NOT</em> provides following features :<br>
+<ul>
+<li>Input vaildation</li>
+<li>Session/Cookie Management</li>
+<li>Database Layer(like ORM)</li>
+<li>Logging</li>
+<li>Other helpful utilities</li>
+</ul>
+</p>
+<p>
+Why not ? - Because of Xhwlay's Concept described below.
+Xhwlay's concepts are following three:<br>
+<ul>
+<li class="xhwlay-concept">Simple</li>
+<li class="xhwlay-concept">Primitive</li>
+<li class="xhwlay-concept">Small</li>
+</ul>
+</p>
+<p>
+I believe that these concepts lead <em>ease to learn, ease to hack, ease to use, and more and more flexibility for developers.</em>
+Xhwlay minds only page flow control. Other features cited above are have to be implemented by Developer's (equal your) own hands.<br>
+But, You'll requre less time to learn Xhwlay itself, than any other "PHP Framework" like symfony, cake to learn.
+Instead, you can use more and more time to consider your own business logics and implementing many codes as you like.
+</p>
+<p>
+I hope you'll sense "FREEDOM" by using Xhwlay in your programming.
+</p>
+</div>
+</div><!-- .text-wrapper -->
+
+<div class="text-wrapper">
+<h1><a name="ABOUT">About</a></h1>
+<h2>License</h2>
+<div class="text">
+Apache Software License 2
+</div>
+<h2>Requirements</h2>
+<div class="text">
+<p>
+PHP : PHP4, PHP5<br>
+Unit Tested : PHP 4.4.7, PHP 5.2.4
+</p>
+<p>
+Xhwlay depends on some PEAR packages and PEAR version must be larger than 1.4.
+Dependency will be resolved when you install by 'pear' command with "--alldeps" options.
+</p>
+</div>
+<h2>Maintainer</h2>
+<div class="text">
+sakamoto.gsyc.3s@gmail.com
+</div>
+</div><!-- .text-wrapper -->
+
+<div class="text-wrapper">
+<h1><a name="DOWNLOAD">Download and Install</a></h1>
+<h2>Latest Release</h2>
+<div class="text">
+<a href="https://github.com/msakamoto-sf/xhwlay-php/releases/tag/v0.9.3-beta">Xhwlay-0.9.3 (beta)</a>
+</div>
+<h2>Installation</h2>
+<div class="text">
+<p>
+Xhwlay(PHP) is provieded as PEAR package. 
+You can install it into your PEAR environment like below:
+<pre>
+$ su (if you needed)
+# pear install \
+https://github.com/msakamoto-sf/xhwlay-php/archive/v0.9.3-beta.tar.gz
+</pre>
+</p>
+<p>
+Are you a normal user, not administrator of your sever ? 
+Don't worry. PEAR provides some means for normal users to setup PEAR environment in user's local/home environment.<br>
+Please refer PEAR Manual : <br>
+&gt;&gt;<a href="http://pear.php.net/manual/en/installation.getting.php" target="manual">"Installation -&gt; Getting Manager" (In English)</a><br>
+In Japanese, you can refer same manual here : <br>
+<a href="http://www.phppro.jp/phpmanual/pear/installation.getting.html" target="manual">http://www.phppro.jp/phpmanual/pear/installation.getting.html</a>
+</p>
+<p>
+After your installation, see <a href="#DOCUMENTS">tutorial document</a>. 
+By making some simple examples in this tutorial, you'll understand what Xhwlay and "event-driven stateful page flow control" is.
+</p>
+<p>
+If you want to uninstall Xhwlay:
+<pre>
+$ su (if you needed)
+# pear uninstall __uri/Xhwlay
+</pre>
+</p>
+</div>
+<h2>Follwing GitHub repositry</h2>
+<div class="text">
+see : <a href="https://github.com/msakamoto-sf/xhwlay-php">https://github.com/msakamoto-sf/xhwlay-php</a>
+</div>
+</div><!-- .text-wrapper -->
+
+<div class="text-wrapper">
+<h1><a name="DOCUMENTS">Documents</a></h1>
+<h2>Tutorial</h2>
+<div class="text">
+<a href="./xhwlay_tutorials_en_1_1.pdf" target="_blank">Xhwlay Tutorials (English) PDF : 274KB</a><br>
+After download and install Xhwlay, Let's make some simple example using Xhwlay. 
+You'll find what xhwlay is, what event-driven stateful page flow control is.
+</div>
+<h2>Internal API Reference</h2>
+<div class="text">
+<a href="../phpdoc/0.9.1" target="api">Online PHPDOC HTML</a><br>
+Classes, methods, constants reference generated by phpDocumentor.
+</div>
+<!--
+<h2>Howto</h2>
+<div class="text">
+(Planning: Howto collection)
+</div>
+<h2>CheatSheet</h2>
+<div class="text">
+(Planning: A4 size one page cheat sheet. May be usefull :) )
+</div>
+-->
+<h2>Theories and Implementations of Finite State Machine</h2>
+<div class="text">
+If you don't know event-driven stateful page flow and "Finite State Machine(FSM)", please look following resources:
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Finite_state_machine">Finite state machine</a></li>
+<li><a href="http://www.isd.mel.nist.gov/projects/omacapi/Software/FiniteStateMachine/doc/FSMExample.html">FSM API Reference Documentation</a></li>
+<li><a href="http://www.isd.mel.nist.gov/projects/omacapi/Software/FiniteStateMachine/doc/">FSM Library API Reference Guide</a></li>
+<li><a href="http://www.sparxsystems.com/resources/uml2_tutorial/uml2_statediagram.html">Sparx Systems - UML 2 Tutorial - State Machine Diagram</a></li>
+<li><a href="http://pear.php.net/package/FSM">PEAR :: Package :: FSM</a></li>
+<li><a href="http://www.generation5.org/content/2003/FSM_Tutorial.asp">generation5 - Finite State Machine Tutorial</a></li>
+</ul>
+(Thank you for Piece-Framework, Stagehand_FSM)
+</div>
+</div><!-- .text-wrapper -->
+
+<div class="text-wrapper">
+<h1>Special Thanks</h1>
+<div class="text">
+Special Thanks for <a href="http://piece-framework.com/" target="piece">Piece Project</a>.
+</div>
+</div><!-- .text-wrapper -->
+
+
+</div><!-- #main -->
+
+</div><!-- #content-wrapper -->
+
+<div id="footer">
+Copyright &copy; 2016 sakamoto.gsyc.3s@gmail.com
+</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+</body>
+</html>

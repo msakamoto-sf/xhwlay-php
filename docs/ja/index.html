@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Xhwlay - イベント駆動指向ステートフルページフロー実行エンジンライブラリ</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="../css/filter_ie4.css">
+</head>
+<body>
+<div id="wrapper">
+
+<div id="header">
+<img id="xhwlay-logo" src="../xhwlay-logo.png" alt="Xhwlay logo"><br><br>
+<div id="xhwlay-headernote">
+<span style="font-style: italic;">" Xhwlay (zur&eacute;i) "</span><br>
+- Event Driven Oriented Stateful Page Flow Execution Engine Library -
+<ul>
+<li><a href="../" title="Back to Top Page">Top</a></li>
+<li><a href="../en/" title="Xhwlay - PHP (English)">English</a></li>
+<li><a href="#INTRO" title="Intro">Intro</a></li>
+<li><a href="#ABOUT" title="About">About</a></li>
+<li><a href="#DOWNLOAD" title="Download and Install">Download/Install</a></li>
+<li><a href="#DOCUMENTS" title="Documents">Documents</a></li>
+</ul>
+</div>
+</div><!-- #header -->
+
+<div id="content-wrapper">
+
+<div id="main">
+
+<div class="text-wrapper">
+<h1><a name="INTRO">イントロ：Xhwlayでできること、できないこと</a></h1>
+<div class="text">
+<span style="font-size: large; font-style: italic; font-weight: bold;">
+Xhwlayはライブラリであって、フレームワークではありません。
+</span>
+<p>
+Xhwlayはイベント駆動指向のステートフルページフロー実行エンジンライブラリです。
+Xhwlayは以下に示すような機能は提供<em>しません。</em><br>
+<ul>
+<li>入力値のバリデーションシステム</li>
+<li>セッション・クッキー管理機能</li>
+<li>データベース操作ライブラリ(ORM等)</li>
+<li>ロギング機能</li>
+<li>その他"フルスタック"と呼ばれるフレームワークが備えている機能</li>
+</ul>
+</p>
+<p>
+なぜXhwlayではこれらを提供しないのか？それは、以下に示すXhwlayの基本コンセプトが理由となります。
+Xhwalyの三大基本コンセプト、それは・・・<br>
+<ul>
+<li class="xhwlay-concept">Simple（概念やクラス構造が簡潔であること）</li>
+<li class="xhwlay-concept">Primitive（実装が原始的であること）</li>
+<li class="xhwlay-concept">Small（コードサイズ全体が小さいこと）</li>
+</ul>
+</p>
+<p>
+この三大基本コンセプトが、<em>学習が簡単で、内部構造の理解(hack)が簡単で、使い方が簡単で、そしてなによりも柔軟性を開発者にもたらす</em>と信じて止みません。
+Xhwlayはページフローの制御のみを担当します。上で述べたような機能は、アプリケーションの開発者自身の手により実装される必要があります。<br>
+しかし、Xhwlayを使いこなすための学習時間は、他のPHPフレームワーク(symfonyやCakeなど)のそれよりも短く済ませることができるはずです。
+現場では、開発者は本当に注力したいビジネスロジックや他の多くのコードを、自分たちの好きなように作り込む為の時間を確保できるのです。
+</p>
+<p>
+Xhwlayは開発者を「フレームワーク病」から解放し、かつてあった「自由」を取り戻してくれることでしょう。
+</p>
+</div>
+</div><!-- .text-wrapper -->
+
+<div class="text-wrapper">
+<h1><a name="ABOUT">Xhwlayについて</a></h1>
+<h2>ライセンス</h2>
+<div class="text">
+Apache Software License 2
+</div>
+<h2>動作環境</h2>
+<div class="text">
+<p>
+PHP : PHP4, PHP5<br>
+動作確認済 : PHP 4.4.7, PHP 5.2.4
+</p>
+<p>
+Xhwlayは幾つかのPEARパッケージに依存しています。また、PEAR自体のバージョンは1.4以上である必要があります。
+PEARパッケージへの依存性は、pearコマンドでインストールする際に "--alldeps" オプションを付けることで解決されるでしょう。
+</p>
+</div>
+<h2>メンテナ</h2>
+<div class="text">
+sakamoto.gsyc.3s@gmail.com
+</div>
+</div><!-- .text-wrapper -->
+
+<div class="text-wrapper">
+<h1><a name="DOWNLOAD">ダウンロードとインストール</a></h1>
+<h2>最新リリース</h2>
+<div class="text">
+<a href="https://github.com/msakamoto-sf/xhwlay-php/releases/tag/v0.9.3-beta">Xhwlay-0.9.3 (beta)</a>
+</div>
+<h2>インストール</h2>
+<div class="text">
+<p>
+PHP用のXhwlayはPEARパッケージで提供されています。
+以下のように、pearコマンドでインストール可能です。
+<pre>
+$ su (if you needed)
+# pear install \
+https://github.com/msakamoto-sf/xhwlay-php/archive/v0.9.3-beta.tar.gz
+</pre>
+</p>
+<p>
+もしあなたがサーバーの管理者でなく、システムのPEARパッケージを操作できないとしても、心配する必要はありません。
+PEARは一般ユーザー権限でもローカル環境にセットアップできる幾つかの方法を提供しています。<br>
+以下のPEARマニュアルを参照して下さい。<br>
+&gt;&gt;<a href="http://pear.php.net/manual/en/installation.getting.php" target="manual">"Installation -&gt; Getting Manager" (In English)</a><br>
+日本語では以下のURLが利用可能です：<br>
+<a href="http://www.phppro.jp/phpmanual/pear/installation.getting.html" target="manual">http://www.phppro.jp/phpmanual/pear/installation.getting.html</a>
+</p>
+<p>
+インストールが終われば、<a href="#DOCUMENTS">チュートリアル</a>を参照してみて下さい。
+チュートリアル中での簡単なサンプルの作成を通して、Xhwlayの使い方や"イベント駆動指向ステートフルページフロー"の概念を学べます。
+</p>
+<p>
+アンインストールしたい場合は以下のようにして下さい。
+<pre>
+$ su (if you needed)
+# pear uninstall __uri/Xhwlay
+</pre>
+</p>
+</div>
+<h2>GitHubリポジトリを追い掛ける</h2>
+<div class="text">
+see : <a href="https://github.com/msakamoto-sf/xhwlay-php">https://github.com/msakamoto-sf/xhwlay-php</a>
+</div>
+</div><!-- .text-wrapper -->
+
+<div class="text-wrapper">
+<h1><a name="DOCUMENTS">ドキュメント</a></h1>
+<h2>チュートリアル</h2>
+<div class="text">
+<a href="./xhwlay_tutorials_ja_1_1.pdf" target="_blank">Xhwlay Tutorials (Japanese) PDF : 339KB</a><br>
+Xhwlayのダウンロードとインストールが終われば、Xhwlayを使った簡単なサンプルを作ってみましょう。
+Xhwlayの使い方や"イベント駆動指向ステートフルページフロー"の概念を学べます。
+</div>
+<h2>内部APIリファレンス</h2>
+<div class="text">
+<a href="../phpdoc/0.9.1" target="api">Online PHPDOC HTML</a><br>
+クラス、メソッド、定数のリファレンス(phpDocumentorによる自動生成)
+</div>
+<!--
+<h2>Howto</h2>
+<div class="text">
+(予定：「こんなときどうするの？」集)
+</div>
+<h2>CheatSheet</h2>
+<div class="text">
+(予定：A4サイズの1ページにまとめたチートシート。多分、便利なはず。)
+</div>
+-->
+<h2>有限状態遷移マシンの理論と実装</h2>
+<div class="text">
+イベント駆動のステートフルページ遷移や、「有限状態遷移マシン(Finit State Machine: FSM)」の詳細については、以下のリソースで知ることができます。
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Finite_state_machine">Finite state machine</a></li>
+<li><a href="http://www.isd.mel.nist.gov/projects/omacapi/Software/FiniteStateMachine/doc/FSMExample.html">FSM API Reference Documentation</a></li>
+<li><a href="http://www.isd.mel.nist.gov/projects/omacapi/Software/FiniteStateMachine/doc/">FSM Library API Reference Guide</a></li>
+<li><a href="http://www.sparxsystems.com/resources/uml2_tutorial/uml2_statediagram.html">Sparx Systems - UML 2 Tutorial - State Machine Diagram</a></li>
+<li><a href="http://pear.php.net/package/FSM">PEAR :: Package :: FSM</a></li>
+<li><a href="http://www.generation5.org/content/2003/FSM_Tutorial.asp">generation5 - Finite State Machine Tutorial</a></li>
+</ul>
+(Piece Framework の Stagehand_FSMに感謝)
+</div>
+</div><!-- .text-wrapper -->
+
+<div class="text-wrapper">
+<h1>Special Thanks</h1>
+<div class="text">
+<a href="http://piece-framework.com/" target="piece">Piece Project</a>に格別の感謝を捧げます。
+</div>
+</div><!-- .text-wrapper -->
+
+
+</div><!-- #main -->
+
+</div><!-- #content-wrapper -->
+
+<div id="footer">
+Copyright &copy; 2016 sakamoto.gsyc.3s@gmail.com
+</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+</body>
+</html>
